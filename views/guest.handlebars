@@ -4,11 +4,11 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-7">
                 <br>
                 <br>
                 <div class="panel-group">
-                    <div class="panel panel-default">
+                    <div class="panel panel-primary">
                         <div class="panel-heading">
                             <h4 class="panel-title" id="surveyPanel">
                                 <a data-toggle="collapse" href="#collapse1">Survey</a>
@@ -20,85 +20,87 @@
                                     <fieldset>
                                         <form name="form1" id="q1">
                                         <div id="panel">
-                                            <p>What is your favorite sport?</p>
+                                            <p class="radioHeadText">What is your favorite sport?</p>
                                             <input type="radio" name="radio-choice" id="radio-choice-1" value="football" />
-                                            <label for="radio-choice-1" id="test">Football</label>
+                                            <label for="radio-choice-1" id="test" class="radioText">Football</label>
 
                                             <input type="radio" name="radio-choice" id="radio-choice-2" value="baseball" />
-                                            <label for="radio-choice-2">Baseball</label>
+                                            <label for="radio-choice-2" class="radioText">Baseball</label>
 
                                             <input type="radio" name="radio-choice" id="radio-choice-3" value="basketball" />
-                                            <label for="radio-choice-3" id="test">Basketball</label>
+                                            <label for="radio-choice-3" id="test" class="radioText">Basketball</label>
 
                                             <input type="radio" name="radio-choice" id="radio-choice-4" value="" />
-                                            <label for="radio-choice-4">I don't like Sports</label>
+                                            <label for="radio-choice-4" class="radioText">I don't like Sports</label>
                                         </div>
                                         </form>
                                         <form>
                                         <div id="panel">
-                                            <p>What is your favorite music genre?</p>
+                                            <p class="radioHeadText">What is your favorite music genre?</p>
                                             <input type="radio" name="radio-choice" id="radio-choice-1" value="country" />
-                                            <label for="radio-choice-1" id="test">Country</label>
+                                            <label for="radio-choice-1" id="test" class="radioText">Country</label>
 
                                             <input type="radio" name="radio-choice" id="radio-choice-2" value="rap" />
-                                            <label for="radio-choice-2">Rap/HipHop</label>
+                                            <label for="radio-choice-2" class="radioText">Rap/HipHop</label>
 
                                             <input type="radio" name="radio-choice" id="radio-choice-3" value="rock" />
-                                            <label for="radio-choice-3" id="test">Rock and Roll</label>
+                                            <label for="radio-choice-3" id="test" class="radioText">Rock and Roll</label>
 
                                             <input type="radio" name="radio-choice" id="radio-choice-4" value="" />
-                                            <label for="radio-choice-4">I don't like music</label>
+                                            <label for="radio-choice-4" class="radioText">I don't like music</label>
                                         </div>
                                         </form>
 
                                         <form>
                                         <div id="panel">
-                                            <p>Do you like theatre?</p>
+                                            <p class="radioHeadText">Do you like theatre?</p>
                                             <input type="radio" name="radio-choice" id="radio-choice-1" value="theatre" />
-                                            <label for="radio-choice-1" id="test">Yes</label>
+                                            <label for="radio-choice-1" id="test" class="radioText">Yes</label>
 
                                             <input type="radio" name="radio-choice" id="radio-choice-2" value="" />
-                                            <label for="radio-choice-2">No</label>
+                                            <label for="radio-choice-2" class="radioText">No</label>
                                         </div>
                                         </form>
 
                                         <form>
                                         <div id="panel">
-                                            <p>What about these events?</p>
+                                            <p class="radioHeadText">What about these events?</p>
                                             <input type="radio" name="radio-choice" id="radio-choice-1" value="comedy" />
-                                            <label for="radio-choice-1" id="test">Comedy</label>
+                                            <label for="radio-choice-1" id="test" class="radioText">Comedy</label>
 
                                             <input type="radio" name="radio-choice" id="radio-choice-2" value="ice show" />
-                                            <label for="radio-choice-2">Ice Show</label>
+                                            <label for="radio-choice-2" class="radioText">Ice Show</label>
 
                                             <input type="radio" name="radio-choice" id="radio-choice-3" value="food" />
-                                            <label for="radio-choice-3" id="test">Food Tastings</label>
+                                            <label for="radio-choice-3" id="test" class="radioText">Food Tastings</label>
 
                                             <input type="radio" name="radio-choice" id="radio-choice-4" value="family" />
-                                            <label for="radio-choice-4">Family Events</label>
+                                            <label for="radio-choice-4" class="radioText">Family Events</label>
                                         </div>
                                         </form>
                                     </fieldset>
                                 </form>
                             </div>
                             <div class="panel-footer">
-                                <button class="btn btn-primary" type="button"  id="submitsurvey">Submit</button>
+                                <button class="btn btn-success" type="button"  id="submitsurvey">Submit</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-sm-5">
                 <br>
                 <br>
                 <div class="panel-group">
-                    <div class="panel panel-default">
+                    <div class="panel panel-primary">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <p>Profile Picture</p>
+                                <a data-toggle="collapse" href="#collapse2">Profile Picture</a>
+                                <!--<p>Profile Picture</p>-->
                             </h4>
                         </div>
+                        <div id="collapse2" class="panel-collapse collapse">
                         <div class="panel-body">
                             <input type="file" id="bannerImg" />
                             <div>
@@ -106,6 +108,7 @@
                             </div>
                             <!-- for result output -->
                             <div id="res"></div>
+                        </div>
                         </div>
                         <br>
                     </div>
@@ -125,7 +128,7 @@
     </div>
 </div>
 
-    <a id="complete" href="/eventsToAttend"><button> SUBMIT </button></a>
+    <a id="complete" href="/eventsToAttend"><button class="btn btn-success"> SUBMIT </button></a>
 
 <script>
 
@@ -286,8 +289,9 @@ fetchimage();
     #submitsurvey{
         display: table;
         margin: auto;
-        background: transparent;
-        color: black;
+        background: #5fb760;
+        color: snow;
+        box-shadow: 0px 0px 2px 2px #377bb5;
     }
 
     #submitpicture{
@@ -319,6 +323,19 @@ fetchimage();
         margin-top: 10px;
         display: table;
         margin: auto;
+    }
+
+    .panel-footer {
+        background: #377bb5!important;
+        opacity: .9!important;
+    }
+
+    .radioHeadText {
+        font-family: Eurostile;
+    }
+
+    .radioText {
+        font-family: Monaco;
     }
 
     /*.panel-default > .panel-heading {*/
