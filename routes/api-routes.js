@@ -3,6 +3,7 @@
 // *********************************************************************************
 var request = require('request');
 var key = require("../config/config.js");
+
 // Dependencies
 // =============================================================
 
@@ -15,7 +16,7 @@ module.exports = function(app) {
 
     // POST route for saving a new Burger
     app.post("/api/get/img", function () {
-        console.log(window.location.href)
+        // console.log(window.location.href)
 
 
         // console.log("REQUIRE ##########################");
@@ -32,7 +33,7 @@ module.exports = function(app) {
     });
 
     app.delete("/api/delete/:id", function (req, res) {
-        console.log(req);
+        // console.log(req);
 
         db.users.destroy({}).then(function (dbUser) {
             if (result.changedRows == 0) {
@@ -46,7 +47,7 @@ module.exports = function(app) {
     });
 
     app.put("/api/update/:id", function (req, res) {
-        console.log(req);
+        // console.log(req);
 
         db.users.update({}).then(function (result) {
             if (result.changedRows == 0) {
@@ -85,7 +86,7 @@ module.exports = function(app) {
             email,
             comment
         }).then(function (dbContacts) {
-            console.log(dbContacts);
+            // console.log(dbContacts);
         });
     });
 
@@ -163,9 +164,9 @@ module.exports = function(app) {
     app.put("/api/survey/:email", function (req, res) {
         var useremail = req.params.email;
         var userchoices = req.body;
-        console.log(useremail);
-        console.log("choice", userchoices);
-        console.log("choice", req.body.choices);
+        // console.log(useremail);
+        // console.log("choice", userchoices);
+        // console.log("choice", req.body.choices);
 
         db.users.update({
                 survey: req.body.choices

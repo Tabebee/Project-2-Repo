@@ -13,7 +13,7 @@ exports.guest = function (req, res) {
 };
 
 exports.events = function (req, res) {
-    res.render("eventsToAttend")
+    res.render("eventsToAttend");
 };
 
 exports.profile = function (req, res) {
